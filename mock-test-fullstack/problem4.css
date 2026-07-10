@@ -1,0 +1,8 @@
+#card{
+    font-weight: bold;
+    display:flex;
+    flex-direction: column;
+    padding:10px;
+    justify-content: center;
+    border:black 1px solid;
+}
