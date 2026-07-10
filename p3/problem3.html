@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="problem3.css">
+        <title>Problem 3</title>
+    </head>
+    <body>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="1">
+                    <th>Algorithm</th>
+                    <th>3</th>
+                    <th><button type="button" id="delete-btn" onclick="this.parentElement.parentElement.remove()">Delete</button></th>
+                </tr>
+
+                <tr id="2">
+                    <th>Database Application</th>
+                    <th>4</th>
+                    <th><button type="button" id="delete-btn" onclick="this.parentElement.parentElement.remove()">Delete</button></th>
+                </tr>
+                <tr>
+                    <th>Fullstack Development</th>
+                    <th>2</th>
+                    <th><button type="button" id="delete-btn" onclick="this.parentElement.parentElement.remove()">Delete</button></th>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="average-score">Average Score: </h2>
+        <input type="text" placeholder="Enter your course name" id="courseName">
+        <input type="text" placeholder="Enter your course score" id="courseScore">
+        <button type="button" id="add-btn" onclick="addCourse()">Add</button>
+        <script src="problem3.js"></script>
+    </body>
+    </html>

@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "mock-test-fullstack"
+		},
+		{
+			"path": "T2_Template_Tailwind"
+		},
+		{
+			"path": "T2_Template_Bootstrap"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "T2_Template_Bootstrap"
+	}
+}
