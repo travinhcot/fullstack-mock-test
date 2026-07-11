@@ -7,6 +7,7 @@
         <title>Problem 3</title>
     </head>
     <body>
+        <h1>Scoreboard</h1>
         <table id="table">
             <thead>
                 <tr>
@@ -14,29 +15,15 @@
                     <th>Score</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr id="1">
-                    <th>Algorithm</th>
-                    <th>3</th>
-                    <th><button type="button" id="delete-btn" onclick="this.parentElement.parentElement.remove()">Delete</button></th>
-                </tr>
-
-                <tr id="2">
-                    <th>Database Application</th>
-                    <th>4</th>
-                    <th><button type="button" id="delete-btn" onclick="this.parentElement.parentElement.remove()">Delete</button></th>
-                </tr>
-                <tr>
-                    <th>Fullstack Development</th>
-                    <th>2</th>
-                    <th><button type="button" id="delete-btn" onclick="this.parentElement.parentElement.remove()">Delete</button></th>
-                </tr>
-            </tbody>
+            <tbody id="table-body"></tbody>
         </table>
         <h2 id="average-score">Average Score: </h2>
-        <input type="text" placeholder="Enter your course name" id="courseName">
-        <input type="text" placeholder="Enter your course score" id="courseScore">
-        <button type="button" id="add-btn" onclick="addCourse()">Add</button>
+        <form action="" id="form">
+            <input type="text" placeholder="Enter your course name" id="courseName">
+            <input type="text" placeholder="Enter your course score" id="courseScore">
+            <button type="submit" id="add-btn" onclick="addCourse()">Add</button>
+        </form>
+        
         <script src="problem3.js"></script>
     </body>
     </html>
