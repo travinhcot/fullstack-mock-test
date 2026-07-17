@@ -2,7 +2,7 @@ const students = [
   { id: 1, name: "Alice", GPA: 3.2 },
   { id: 2, name: "Bob", GPA: 2.4 },
   { id: 3, name: "Carol", GPA: 1.8 },
-  { id: 4, name: "YourRealFirstName", GPA: 3.9 },
+  { id: 4, name: "Phuc", GPA: 3.9 },
 ];
 
 const table = document.getElementById("student-table");

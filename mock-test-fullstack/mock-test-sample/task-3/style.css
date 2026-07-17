@@ -1,0 +1,29 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+table{
+    border:black 1px solid;
+    border-radius: 5px;
+}
+h1{
+    text-align: center;
+}
+#table{
+    display: flex;
+    justify-content: center;
+    padding:10px;
+}
+td{
+    border:black 1px solid;
+}
+h1:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in;
+    background-color: blue;
+    color:white
+}
+
+img:hover{
+    transform: scale(1.5);
+    transition: 1s ease-in;;
+}

@@ -3,26 +3,32 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="problem3.css">
         <title>Problem 3</title>
     </head>
     <body>
-        <h1>Scoreboard</h1>
-        <table id="table">
-            <thead>
-                <tr>
-                    <th>Course Name</th>
-                    <th>Score</th>
-                </tr>
-            </thead>
-            <tbody id="table-body"></tbody>
-        </table>
-        <h2 id="average-score">Average Score: </h2>
-        <form action="" id="form">
-            <input type="text" placeholder="Enter your course name" id="courseName">
-            <input type="text" placeholder="Enter your course score" id="courseScore">
-            <button type="submit" id="add-btn" onclick="addCourse()">Add</button>
-        </form>
+        <h1 class="font-bold text-blue-500 text-center">Scoreboard</h1>
+        <div class="flex flex-col items-center p-2">
+            <table id="table" class="border-2">
+                <thead>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>  
+        
+        <div class=" flex items-center flex-col justify-center w-full p-4 gap-2">
+            <h2 id="average-score" class="text-center font-bold p-2">Average Score: </h2>
+            <form action="" id="form" class="border-2 flex flex-col gap-2 p-5 rounded-xs">
+                <input type="text" placeholder="Enter your course name" id="courseName" class="border-2">
+                <input type="text" placeholder="Enter your course score" id="courseScore" class="border-2 border-black-500">
+                <button type="submit" id="add-btn" onclick="addCourse()" class="bg-blue-500 font-bold">Add</button>
+            </form>
+        </div>
         
         <script src="problem3.js"></script>
     </body>

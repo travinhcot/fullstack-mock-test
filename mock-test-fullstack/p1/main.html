@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style.css">
     <title>Mock-test</title>
 </head>
 <body>
-    <h1>Gender Checker</h1>
-    <input type="text" id="firstName" name="firstName">
-    <h2 id="name"></h2>
-    <button type="button" id="submit-btn">Check </button>
+    <h1 class="text-red-500 text-center text-xl font-bold ">Gender Checker</h1>
+    <div class="container  flex justify-center flex-col rounded-xs px-2 items-center">
+        <input type="text" id="firstName" name="firstName" class="border-2">
+        <h2 id="name" class="font-bold text-blue-600"></h2>
+        <div id="error-msg"></div>
+        
+    </div>
+    <div class="button flex items-center justify-center pt-2 ">
+        <button type="button" id="submit-btn" class="bg-red-500 border-2 p-2 rounded-xs">Check </button>
+    </div>
+    
+    
+    
     <script src="./main.js"></script>
 </body>
 </html>

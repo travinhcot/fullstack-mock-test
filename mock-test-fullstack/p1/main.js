@@ -1,11 +1,17 @@
 const nameEl = document.getElementById("name");
 const input = document.getElementById("firstName");
 const button = document.getElementById("submit-btn");
-
+const errorMsg = document.getElementById("error-msg");
+const regex = /^[A-Z][a-zA-Z '.-]*[A-Za-z][^-]$/;
 button.addEventListener("click", async function () {
   const nameValue = input.value.trim();
   if (nameValue === "") {
     nameEl.textContent = "Please enter a name";
+    nameEl.className = "";
+    return;
+  }
+  if (!regex.test(nameValue)) {
+    nameEl.textContent = "Please enter the right name format";
     nameEl.className = "";
     return;
   }

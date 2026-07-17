@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./style1.css">
     <title>Student</title>
 </head>
-<body>
-    <table>
+<body class="min-h-screen flex items-center justify-center">
+    <table class="mx-auto text-center">
         <thead>
-            <tr>
-                <th>ID</th>
+            <tr class="">
+                <th class="">ID</th>
                 <th>Name</th>
                 <th>GPA</th>
                 <th>Grade</th>
             </tr>
         </thead>
-        <tbody id="student-table"></tbody>
+        <tbody id="student-table" class="border-2"></tbody>
     </table>
     <script src="./student.js"></script>
 </body>
